@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <p>
+      <%= flash.notice%>
+    </p>
+    <nav>
+      <%# t significa translate %>
+      <%= link_to t("menu.signup"), new_user_path%>
+      <%= link_to t("menu.signin"), new_session_path%>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
