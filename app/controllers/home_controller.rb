@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
-  def show    
+  def show
+    @ads = Ad.all    
   end
 end
